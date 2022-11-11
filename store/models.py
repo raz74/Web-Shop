@@ -13,7 +13,7 @@ class product(models.Model):
     inventory = models.IntegerField()
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey('collection', on_delete=models.PROTECT)
-    promotion = models.ManyToManyField(promotion)
+    # promotion = models.ManyToManyField(promotion)
 
 
 class customer(models.Model):
